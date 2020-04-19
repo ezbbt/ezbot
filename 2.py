@@ -56,7 +56,7 @@ async def on_message(message):
         for i in range(0, len(person)):
             await message.channel.send(person[i] + "---->" + teamname[i])
 
-    if message.content.startswith("!amidakuji"):
+    if message.content.startswith("!ami"):
         team = message.content[5:]
         peopleteam = team.split("/")
         people = peopleteam[0]
@@ -88,9 +88,9 @@ async def on_message(message):
         await message.channel.send("-->           !12dice")
         await message.channel.send("1~12までランダム")
         await message.channel.send("=========== あみだくじを使用する方法 ============")
-        await message.channel.send("-->           !amidakuji")
-        await message.channel.send("-->           !amidakuji name1 name2/no yes")
-        await message.channel.send("-->           !amidakuji name1 name2 name3/no no yes")
+        await message.channel.send("-->           !ami")
+        await message.channel.send("-->           !ami name1 name2/no yes")
+        await message.channel.send("-->           !ami name1 name2 name3/no no yes")
         await message.channel.send("================== Ez ======================")
 
 access_token = os.environ["BOT_TOKEN"]
