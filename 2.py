@@ -82,15 +82,15 @@ async def on_message(message):
 
     if message.content.startswith("!help"):
         await message.channel.send("========== サイコロを使用する方法 ==============")
-        await message.channel.send("  !dice  ")
+        await message.channel.send("(  !dice  )")
         await message.channel.send("1~6までランダム")
         await message.channel.send("========== 12주サイコロを使用する方法 ===========")
-        await message.channel.send("  !12dice  ")
+        await message.channel.send("( !12dice )")
         await message.channel.send("1~12までランダム")
         await message.channel.send("=========== あみだくじを使用する方法 ============")
-        await message.channel.send(" !amidakuji")
-        await message.channel.send(" !amidakuji name1 name2/no yes")
-        await message.channel.send(" !amidakuji name1 name2 name3/no no yes")
+        await message.channel.send("( !amidakuji  )")
+        await message.channel.send("( !amidakuji name1 name2/no yes  )")
+        await message.channel.send("( !amidakuji name1 name2 name3/no no yes  )")
         await message.channel.send("================== Ez ======================")
 
 access_token = os.environ["BOT_TOKEN"]
